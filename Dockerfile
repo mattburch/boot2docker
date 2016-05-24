@@ -82,9 +82,7 @@ RUN cd $ROOTFS/lib/modules && \
     rm -rf ./*/kernel/drivers/staging/lustre/* && \
     rm -rf ./*/kernel/drivers/staging/comedi/* && \
     rm -rf ./*/kernel/fs/ocfs2/* && \
-    rm -rf ./*/kernel/net/bluetooth/* && \
-    rm -rf ./*/kernel/net/mac80211/* && \
-    rm -rf ./*/kernel/net/wireless/*
+    rm -rf ./*/kernel/net/bluetooth/*
 
 # Install libcap
 RUN curl -fL http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.22.orig.tar.gz | tar -C / -xz && \
